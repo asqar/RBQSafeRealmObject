@@ -13,7 +13,6 @@ RBQSafeRealmObject represents a RLMObject with a primary key and can be used acr
   s.source       = { :git => "https://github.com/Roobiq/RBQSafeRealmObject.git", :tag => "v#{s.version}"}
   s.source_files  = "*.{h,m}"
   s.requires_arc = true
-  s.dependency 'Realm', '>= 0.95'
-  s.dependency 'RealmUtilities', '>=0.2.1'
+  s.dependency 'RealmUtilities', :git => 'https://github.com/asqar/RealmUtilities.git'
 
 end
