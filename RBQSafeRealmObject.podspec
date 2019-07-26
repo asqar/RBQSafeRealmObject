@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RBQSafeRealmObject"
-  s.version      = "0.6"
+  s.version      = "1.1"
   s.summary      = "Thread-safe representation of a Realm object"
   s.description  = <<-DESC
 RBQSafeRealmObject represents a RLMObject with a primary key and can be used across threads.
@@ -14,5 +14,5 @@ RBQSafeRealmObject represents a RLMObject with a primary key and can be used acr
   s.source_files  = "*.{h,m}"
   s.requires_arc = true
   s.dependency 'RealmUtilities', :git => 'https://github.com/asqar/RealmUtilities.git'
-
+  s.dependency 'Realm', '>= 0.99.1'
 end
